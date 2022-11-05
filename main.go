@@ -47,7 +47,7 @@ func main() {
 func StartServices() {
 	router := gin.Default()
 	router.GET("/clusters", getClusters)
-	router.Run("localhost:8080")
+	router.Run()
 }
 
 func getClusters(c *gin.Context) {
